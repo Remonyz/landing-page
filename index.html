@@ -1,243 +1,933 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Justin Ly</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Ly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1><br />
-						Justin Ly</h1>
-						<p>Welcome to my Website.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f6d365 0%, #fb6238 100%);
+            min-height: 100vh;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Justin Ly</a>
-					</header>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-				<!-- Nav
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav> -->
+        /* Header */
+        header {
+            background: transparent;
+            /* backdrop-filter: blur(10px); */
+            position: relative;
+            /* top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease; */
+        }
 
-				<!-- Main -->
-					<div id="main">
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+        }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">January, 2024 - Present</span>
-									<h2>Full-Stack<br />
-									Web Developer</h2>
-									<h3>At UC Merced I...</h3>
-									<p>Developed a system using Python & SQLite, generating personalized 
-										course recommendations by querying user enrollment history, identifying 
-										untaken courses, verifying prerequisites, and compiling a refined 
-										list of suitable courses to streamline semi-annual student 
-										registrations.
-									</p>
-									<p>Spearheaded database development by leveraging BeautifulSoup and 
-										Selenium to scrape data from the UCM course catalog, resulting in 
-										a streamlined database that significantly improved data accessibility 
-										and accuracy by 97.83%
-									</p>
-								</header>
-								<a class="image main"><img src="images/download.png" alt="" style="width: 50%; height: auto;"/></a>
-								<!-- <ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul> -->
-							</article>
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">March 2024</span>
-										<h2><a href="https://github.com/Remonyz/Agriculture-Review-Tool-ART-">Hackathon<br />
-										Agricultural Review Tool</a></h2>
-									</header>
-									<a href="https://github.com/Remonyz/Agriculture-Review-Tool-ART-" class="image fit"><img src="images/agriculture.jpeg" alt="" /></a>
-									<p>Constructed an application leveraging data scraped from the USDA 
-										database on all 50 states, facilitating efficient data analysis 
-										and visualization capabilities for agricultural data sets, thus 
-										streamlining the process of accessing and interpreting agricultural 
-										data
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Remonyz/Agriculture-Review-Tool-ART-" class="button">Full Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">May 2023</span>
-										<h2><a href="https://github.com/Remonyz/Job-Application-Tracker">Job<br />
-										Application Tracker</a></h2>
-									</header>
-									<a href="https://github.com/Remonyz/Job-Application-Tracker" class="image fit"><img src="images/job app.jpeg" alt="" /></a>
-									<p>Developed a job application tracker application with Python & SQLite, 
-										incorporating two interconnected tables with a left-join operation to 
-										link users with their respective added job listings seamlessly, 
-										architecting the backend database schema and ensuring data integrity 
-										throughout the application
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Remonyz/Job-Application-Tracker" class="button">Full Code</a></li>
-									</ul>
-								</article>
-								<!-- <article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article> -->
-							</section>
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            flex: 2;
+        }
 
-						<!-- Footer -->
-							<footer>
-								<!-- <div class="pagination"> -->
-									<!--<a href="#" class="previous">Prev</a>-->
-									<!-- <a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a> -->
-								<!-- </div> -->
-							</footer>
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem; /* increase font size */
+            padding-top: 1rem; /* add padding from top */
+            display: inline-block; /* makes padding take effect properly */
+            transition: color 0.3s ease;
+        }
 
-					</div>
+        .nav-links a:hover {
+            color: #ffd700;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form action="https://formsubmit.co/justinly818@gmail.com" method="POST">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section>
-								<h3>Resume</h3>
-								<p><a href="Justin Ly Resume 2025.docx.pdf" target="_blank">Download Resume</a></p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p>(415) 309-2282</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>justinly818@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/justin-ly-80689981/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<li><a href="https://github.com/Remonyz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
 
-				
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
 
-			</div>
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.3s forwards;
+        }
 
-	</body>
+        .cta-button {
+            display: inline-block;
+            background: transparent; /* transparent background */
+            color: white; /* white text */
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: 2px solid white; /* white border */
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.6s forwards;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.1); /* faint glow on hover */
+        }
+
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.116);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) { width: 150px; height: 150px; top: 20%; left: 10%; animation-delay: 0s; }
+        .shape:nth-child(2) { width: 120px; height: 120px; top: 60%; left: 80%; animation-delay: 2s; }
+        .shape:nth-child(3) { width: 300px; height: 300px; top: 70%; left: 20%; animation-delay: 4s; }
+        .shape:nth-child(4) { width: 500px; height: 500px; top: 15%; left: 50%; animation-delay: 6s; }
+
+        /* Main Content */
+        main {
+            background: white;
+            margin-top: 0;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #f6d365, #fb6238);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            color: white;
+            margin: 0 auto;
+            animation: subtleFloat 5s ease-in-out infinite;
+            z-index: 1;
+            position: relative;
+        }
+
+        .about-image::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f6d365, #fb6238);
+            background-size: 300% 300%;
+            animation: borderGlow 6s ease infinite;
+            z-index: -1;
+            filter: blur(8px);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: wiggle 1s ease-in-out infinite;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e1e8ed;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-header {
+            height: 200px;
+            background: linear-gradient(135deg, #f6d365 0%, #fb6238 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #764ba2;
+        }
+
+        /* Resume Section */
+        .resume-section {
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .resume-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #f6d365, #fb6238);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .resume-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #f6d365, #fb6238);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #f6d365, #fb6238);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s ease-out;
+        }
+
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .gradient-shine {
+            background: linear-gradient(90deg, #fff, #f6d365, #fff);
+            background-size: 200% auto;
+            color: white;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+
+        .wave-divider {
+            height: 80px;
+            overflow: hidden;
+            line-height: 0;
+            position: relative;
+            background: transparent;
+        }
+
+        .wave-divider svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+
+        @keyframes subtleFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes borderGlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes shine {
+            0% { background-position: 200% center; }
+            100% { background-position: -200% center; }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(40px, -80px); /* X and Y movement */
+            }
+        }
+
+        @keyframes waveMove {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-20px);
+        }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Justin Ly</h1>
+                <p>This is my portfolio</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section fade-in-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/me.jpg" alt="Justin Ly" />
+                    </div>
+                    <div class="about-text">
+                        <p>Hi, I'm Justin Ly — a Data Analyst and Computer Science & Engineering graduate from UC Merced. My work bridges data engineering and AI, with a focus on transforming raw information into business-ready insights.</p>
+                        <p>I’ve built machine learning models for healthcare, developed ETL pipelines that saved hours of manual labor, and created dashboards that empowered teams to make smarter decisions. Whether it’s engineering database systems or deploying neural networks, I take pride in delivering measurable results.</p>
+                        <p>I’m passionate about tackling real-world challenges through clean data, intelligent automation, and sharp visualization. Outside of coding, you’ll find me exploring new AI research or building tools that improve everyday workflows.</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <h3>Data Analysis & BI</h3>
+                        <p>Power BI, Excel, Pandas, NumPy, DAX, Matplotlib</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🤖</div>
+                        <h3>Machine Learning</h3>
+                        <p>PyTorch, Scikit-learn, SVM, Data Mining, Classification Models</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>ETL & Automation</h3>
+                        <p>Python, Selenium, BeautifulSoup, SQLite, PostgreSQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🗃️</div>
+                        <h3>Database Design</h3>
+                        <p>SQL, Firebase, ER Diagrams, Data Normalization, Bcrypt</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, Flask</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🧠</div>
+                        <h3>Technical Stack</h3>
+                        <p>Python, C++, JavaScript, Git, Google Colab, Jupyter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wave-divider">
+            <svg viewBox="0 0 500 80" preserveAspectRatio="none">
+              <!-- Define Gradient -->
+              <defs>
+                <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f6d365" />
+                  <stop offset="100%" stop-color="#fb6238" />
+                </linearGradient>
+              </defs>
+          
+              <!-- Morphing Wave Path -->
+              <path fill="url(#waveGradient)">
+                <animate attributeName="d" dur="4s" repeatCount="indefinite"
+                  values="
+                    M0,30 C150,80 350,0 500,30 L500,0 L0,0 Z;
+                    M0,40 C130,60 370,20 500,40 L500,0 L0,0 Z;
+                    M0,35 C180,90 320,10 500,35 L500,0 L0,0 Z;
+                    M0,30 C150,80 350,0 500,30 L500,0 L0,0 Z
+                  "
+                />
+              </path>
+            </svg>
+        </div>
+          
+
+        <section id="projects" class="section fade-in-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section resume-section fade-in-section">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>See my resume to learn more about my experience and qualifications.</p>
+                <a href="justin_ly_resume.pdf" class="resume-button" target="_blank" rel="noopener noreferrer">
+                    View Resume
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about data and AI!</p>
+                        <div class="social-links">
+                            <a href="http://linkedin.com/in/justin-ly-80689981" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/remonyz" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:justinly818@gmail.com" class="social-link" title="Email">📧</a>
+                            <!-- <a href="https://twitter.com/yourusername" target="_blank" class="social-link" title="Twitter">🐦</a> -->
+                        </div>
+                    </div>
+                    <!-- <div class="contact-form">
+                        <form onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Justin Tang Ly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Projects data - easily add new projects here
+        const projects = [
+            {
+                title: "Insurance Claims Communication Data Analytics Dashboard",
+                description: "Transformed unstructured communication data into analyzable format through star schema data modeling and Python data cleaning techniques, enabling time-series analysis across 3+ years of claimant interactions",
+                tags: ["Python", "PowerBI", "Pandas"],
+                github: "https://github.com/Remonyz/Gain-Life-Challenge",
+                demo: null,
+                icon: "🤖"
+            },
+            {
+                title: "Hypersonic Missile Flight Model",
+                description: "Built a physics-based web application simulating hypersonic missile glide trajectories using custom atmospheric and flight dynamics models, supporting real-time user parameterization and scenario analysis",
+                tags: ["Python", "Flask", "NumPy", "SciPy", "Matplotlib"],
+                github: "https://github.com/Remonyz/Hypersonic-Missile-Flight-Model",
+                demo: "https://hypersonic-missile-flight-model.onrender.com/",
+                icon: "📊"
+            },
+            {
+                title: "UC Merced Course Recommendation Platform",
+                description: "Tackled inefficient course registration affecting 9,000+ students by developing a data-driven recommendation system using SQL and Python frameworks, reducing advisor workload through automation while delivering the project within 6 months",
+                tags: ["Python", "Flask", "Selenium", "BeautifulSoup", "SQLite"],
+                github: "https://github.com/usurniro/CSE_Course_Recommendation_Deployment",
+                demo: "https://db-a1.ucmerced.edu/",
+                icon: "🖼️"
+            },
+            {
+                title: "Count Tomato",
+                description: "Developed an AI-driven plant counting platform leveraging FastAPI, PostgreSQL, Redis, and advanced computer vision models (PyTorch, TensorFlow) to automate seedling tray analysis and streamline agricultural data management through a modern web dashboard",
+                tags: ["Python", "PostgreSQL", "FastAPI", "Redis", "MinIO", "Tensorflow", "OpenCV"],
+                github: "https://github.com/YuLiu003/MS_Plant_Count",
+                demo: null,
+                icon: "🍅"
+            },
+            {
+                title: "Brain Tumor Classification Model",
+                description: "Engineered custom TinyVGG neural network for medical image analysis, achieving 94% tumor classification accuracy on 1,500+ MRIs",
+                tags: ["Python", "PyTorch", "Scikit-learn", "NumPy"],
+                github: "https://github.com/Remonyz/Brain-Tumor-Classification-Model",
+                demo: null,
+                icon: "📈"
+            },
+            {
+                title: "2023 Spotify Streams Data Analysis",
+                description: "Queried and analyzed a music dataset consisting of 953 songs from a MySQL database using Python (Pandas, NumPy) in Jupyter Notebook, uncovering trends such as the most common BPM (120) and key (C major)",
+                tags: ["Python", "MySQL", "Pandas", "NumPy", "PowerBI"],
+                github: "https://github.com/Remonyz/Top-Songs-on-Spotify-2023",
+                demo: null,
+                icon: "🎵"
+            },
+            {
+                title: "Employ.ai",
+                description: "Developed a dynamic job search platform with Next.js and Firebase, enhancing user engagement by 30% through personalized job recommendations using the OpenAI and Adzuna API",
+                tags: ["JavaScript", "TypeScript", "React", "Next.js", "Express.js", "Cheerio", "Node-fetch", "Material UI"],
+                github: "https://github.com/ihysi2024/employ.ai",
+                demo: null,
+                icon: "💼"
+            },
+            {
+                title: "Agricultural Review Tool (A.R.T.)",
+                description: "Constructed an application leveraging data scraped from the USDA database on all 50 states, facilitating efficient data analysis and visualization capabilities for agricultural data sets, thus streamlining the process of accessing and interpreting agricultural data",
+                tags: ["Python", "Flask", "BeautifulSoup", "SQLite"],
+                github: "https://github.com/Remonyz/Agriculture-Review-Tool-ART-",
+                demo: null,
+                icon: "🚜"
+            },
+            {
+                title: "Patient Watilist Analytics Dashboard",
+                description: "Reformatted healthcare datasets through Power Query optimization with dynamic parameter tables, enabling administrators to identify capacity issues across 700k+ patient records and reduce wait times for high-priority specialties",
+                tags: ["PowerBI"],
+                github: "https://github.com/Remonyz/PatientDashboard",
+                demo: null,
+                icon: "🩺"
+            },
+            {
+                title: "Coffee Sales Dashboard",
+                description: "Refined chaotic sales data into strategic insights through advanced Excel modeling (XLOOKUP, IF, INDEX-MATCH), enabling targeted inventory management that any data driven organization would benefit from",
+                tags: ["Excel"],
+                github: "https://github.com/Remonyz/CoffeeSalesExcel",
+                demo: null,
+                icon: "☕️"
+            }
+        ];
+
+        // Function to render projects
+        function renderProjects() {
+            const projectsGrid = document.getElementById('projects-grid');
+            projectsGrid.innerHTML = '';
+
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                
+                projectCard.innerHTML = `
+                    <div class="project-header">
+                        <span style="font-size: 4rem;">${project.icon}</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <div class="project-tags">
+                            ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="project-links">
+                            <a href="${project.github}" target="_blank" class="project-link">GitHub</a>
+                            ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link">Live Demo</a>` : ''}
+                        </div>
+                    </div>
+                `;
+                
+                projectsGrid.appendChild(projectCard);
+            });
+        }
+
+        // Function to add new project (for future use)
+        function addProject(newProject) {
+            projects.push(newProject);
+            renderProjects();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // // Header background change on scroll
+        // window.addEventListener('scroll', () => {
+        //     const header = document.querySelector('header');
+        //     if (window.scrollY > 100) {
+        //         header.style.background = 'rgba(255, 255, 255, 0.95)';
+        //         header.style.color = '#333';
+        //     } else {
+        //         header.style.background = 'rgba(255, 255, 255, 0.1)';
+        //         header.style.color = 'white';
+        //     }
+        // });
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            event.target.reset();
+        }
+
+        // Resume download handler
+        function downloadResume() {
+            // In a real implementation, this would download your actual resume file
+            alert('Resume download would start here. Please upload your resume file and link it properly.');
+        }
+
+        // Initialize projects on page load
+        document.addEventListener('DOMContentLoaded', renderProjects);
+
+        const sections = document.querySelectorAll('.fade-in-section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // stop observing once it's visible
+                }
+            });
+        }, {
+            threshold: 0.3  // <- Change this value to control when it triggers (40% visible)
+        });
+
+        sections.forEach(sec => observer.observe(sec));
+    </script>
+</body>
 </html>
