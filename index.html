@@ -882,6 +882,17 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    
+                    // Force check visibility after smooth scroll completes
+                    setTimeout(() => {
+                        // Manually trigger intersection observer check
+                        const targetRect = target.getBoundingClientRect();
+                        const isVisible = targetRect.top < window.innerHeight && targetRect.bottom > 0;
+                        
+                        if (isVisible && !target.classList.contains('visible')) {
+                            target.classList.add('visible');
+                        }
+                    }, 800); // Wait for smooth scroll to complete (adjust timing if needed)
                 }
             });
         });
