@@ -924,7 +924,8 @@
                 }
             });
         }, {
-            threshold: 0.3  // <- Change this value to control when it triggers (40% visible)
+            threshold: 0.1,  // <- Reduced from 0.3 to 0.1 (10% visible)
+            rootMargin: '0px 0px -50px 0px'  // <- Added rootMargin to trigger slightly earlier
         });
 
         sections.forEach(sec => observer.observe(sec));
